@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin  # Disallow crawling of admin pages
+Disallow: /cart   # Disallow crawling of cart pages
+Disallow: /checkout  # Disallow crawling of checkout pages
+Sitemap: https://ASKAi1.com/sitemap.xml  # Specify the location of your sitemap
