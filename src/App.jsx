@@ -28,33 +28,33 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/allproducts" element={<Allproducts />} />
-          <Route path="/order" element={
+          <Route a="/" element={<Home />} />
+          <Route a="/allproducts" element={<Allproducts />} />
+          <Route a="/order" element={
             <ProtectedRoute>
               <Order />
             </ProtectedRoute>
           } />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/dashboard" element={
+          <Route a="/cart" element={<Cart />} />
+          <Route a="/dashboard" element={
             <ProtectedRouteForAdmin>
               <Dashboard />
             </ProtectedRouteForAdmin>
           } />
-          <Route path='/login' element={<Login/>} />
-          <Route path='/signup' element={<Signup/>} />
-          <Route path='/productinfo/:id' element={<ProductInfo/>} />
-          <Route path='/addproduct' element={
+          <Route a='/login' element={<Login/>} />
+          <Route a='/signup' element={<Signup/>} />
+          <Route a='/productinfo/:id' element={<ProductInfo/>} />
+          <Route a='/addproduct' element={
             <ProtectedRouteForAdmin>
               <AddProduct/>
             </ProtectedRouteForAdmin>
           } />
-          <Route path='/updateproduct' element={
+          <Route a='/updateproduct' element={
             <ProtectedRouteForAdmin>
               <UpdateProduct/>
             </ProtectedRouteForAdmin>
           } />
-          <Route path="/*" element={<NoPage />} />
+          <Route a="/*" element={<NoPage />} />
         </Routes>
         <ToastContainer/>
       </Router>
