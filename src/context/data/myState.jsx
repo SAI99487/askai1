@@ -135,12 +135,12 @@ function myState(props) {
         }
     }
 
-   const Slider_settings = {
-			dots: true,
-			infinite: true,
-			speed: 500,
-			slidesToShow: 1,
-			slidesToScroll: 1,
+   const Slider_settings ={
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1, 
+    slidesToScroll: 1,
 		}
     const [order, setOrder] = useState([]);
 
