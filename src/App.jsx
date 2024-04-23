@@ -32,7 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
           <Route path="/order" element={
-            <ProtectedRoute>
+            <path>
               <Order />
             </ProtectedRoute>
           } />
